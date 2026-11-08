@@ -16,7 +16,7 @@ class GameProvider extends ChangeNotifier {
       id: 2,
       title: "God of War",
       category: "Adventure",
-      image: "",
+      image: "assets/astona.jpg",
       rating: 4.9,
       description: "Experience an epic adventure.",
     ),
@@ -25,9 +25,10 @@ class GameProvider extends ChangeNotifier {
       id: 3,
       title: "Call of Duty",
       category: "FPS",
-      image: "",
+      image: "top.jpg",
       rating: 4.7,
       description: "Enter the battlefield.",
     ),
   ];
+  List<Game> get games => _games;
 }

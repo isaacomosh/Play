@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:play/home_screen.dart';
 
 class Play extends StatefulWidget {
   const Play({super.key});
@@ -37,20 +38,28 @@ class _PlayState extends State<Play> {
                 ),
               ),
               SizedBox(height: 20),
-              Container(
-                width: 390,
-                height: 70,
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(10),
-                ),
-                child: Center(
-                  child: Text(
-                    'Play',
-                    style: GoogleFonts.roboto(
-                      fontSize: 35,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                  );
+                },
+                child: Container(
+                  width: 390,
+                  height: 70,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Center(
+                    child: Text(
+                      'Play',
+                      style: GoogleFonts.roboto(
+                        fontSize: 35,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
                 ),
