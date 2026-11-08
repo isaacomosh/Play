@@ -12,6 +12,7 @@ class _PlayState extends State<Play> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Center(
           child: Column(
@@ -27,7 +28,7 @@ class _PlayState extends State<Play> {
                 child: Center(
                   child: Text(
                     'PlayStation 5',
-                    style: GoogleFonts.firaSansExtraCondensed(fontSize: 35),
+                    style: GoogleFonts.nunito(fontSize: 35),
                   ),
                 ),
               ),
@@ -42,7 +43,7 @@ class _PlayState extends State<Play> {
                 child: Center(
                   child: Text(
                     'Play',
-                    style: GoogleFonts.poppins(
+                    style: GoogleFonts.roboto(
                       fontSize: 35,
                       color: Colors.white,
                     ),
