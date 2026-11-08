@@ -22,7 +22,11 @@ class _PlayState extends State<Play> {
               SizedBox(height: 20),
               Text(
                 "PLAY HAS NO LIMITS",
-                style: GoogleFonts.bebasNeue(fontSize: 53, letterSpacing: 2),
+                style: GoogleFonts.bebasNeue(
+                  fontSize: 53,
+                  letterSpacing: 2,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               Container(
                 child: Center(
@@ -38,7 +42,7 @@ class _PlayState extends State<Play> {
                 height: 70,
                 decoration: BoxDecoration(
                   color: Colors.blue,
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: Center(
                   child: Text(
@@ -46,10 +50,12 @@ class _PlayState extends State<Play> {
                     style: GoogleFonts.roboto(
                       fontSize: 35,
                       color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
               ),
+              Positioned(top: 10, left: 70, child: Text('SONY')),
             ],
           ),
         ),
