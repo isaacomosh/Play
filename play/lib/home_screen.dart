@@ -25,7 +25,33 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text("New Releases", style: GoogleFonts.nunito()),
+              Text(
+                "New Releases",
+                style: GoogleFonts.nunito(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              SizedBox(height: 20),
+              Container(
+                width: 190,
+                height: 190,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Stack(
+                  children: [
+                    ClipRRect(
+                      borderRadius: BorderRadiusGeometry.circular(25),
+                      child: Image.asset(
+                        "assets/gtaco.jpg",
+                        width: double.infinity,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ),
         ),
