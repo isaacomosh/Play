@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:play/play.dart';
 import 'package:provider/provider.dart';
 import 'providers/game_provider.dart';
-import 'home_screen.dart';
 
 void main() {
   runApp(

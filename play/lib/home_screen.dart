@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-
-import '../providers/game_provider.dart';
-import '../widgets/game_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
