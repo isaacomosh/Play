@@ -25,32 +25,69 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              Text(
-                "New Releases",
-                style: GoogleFonts.nunito(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "New Releases",
+                    style: GoogleFonts.nunito(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  Text(
+                    "See All",
+                    style: GoogleFonts.nunito(
+                      fontSize: 18,
+                      color: Colors.grey,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
               ),
               SizedBox(height: 20),
-              Container(
-                width: 190,
-                height: 190,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Stack(
-                  children: [
-                    ClipRRect(
-                      borderRadius: BorderRadiusGeometry.circular(25),
-                      child: Image.asset(
-                        "assets/gtaco.jpg",
-                        width: double.infinity,
-                        fit: BoxFit.cover,
-                      ),
+              Row(
+                children: [
+                  Container(
+                    width: 190,
+                    height: 190,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
                     ),
-                  ],
-                ),
+                    child: Stack(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadiusGeometry.circular(20),
+                          child: Image.asset(
+                            "assets/gtaco.jpg",
+                            width: double.infinity,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  Container(
+                    width: 190,
+                    height: 190,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    child: Stack(
+                      children: [
+                        ClipRRect(
+                          borderRadius: BorderRadiusGeometry.circular(20),
+                          child: Image.asset(
+                            "assets/ok.jpg",
+                            width: double.infinity,
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
