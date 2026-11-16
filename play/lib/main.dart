@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:play/play.dart';
+import 'package:play/providers/console_provider.dart';
 import 'package:provider/provider.dart';
 import 'providers/game_provider.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => GameProvider(),
-      child: const MyApp(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => GameProvider()),
+        ChangeNotifierProvider(create: (_) => ConsoleProvider()),
+      ],
     ),
   );
 }
