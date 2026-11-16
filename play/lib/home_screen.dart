@@ -15,6 +15,38 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              SizedBox(height: 15),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Good Morning",
+                        style: GoogleFonts.nunito(
+                          fontSize: 28,
+                          color: Colors.grey,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text(
+                        "Marcus Weiner",
+                        style: GoogleFonts.nunito(
+                          fontSize: 18,
+
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(width: 10),
+                  CircleAvatar(
+                    radius: 30, // Adjust this size to fit your needs
+                    backgroundImage: AssetImage("assets/top.jpg"),
+                  ),
+                ],
+              ),
               SizedBox(height: 10),
               Container(
                 width: 390,
